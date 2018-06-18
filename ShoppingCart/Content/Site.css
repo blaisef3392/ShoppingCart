@@ -61,9 +61,6 @@ navbar-nav {
     display: block;
 }
 
-.mostPopular {
-}
-
 div.categories {
     max-width: 200px;
     position:relative;
@@ -94,14 +91,31 @@ div.categories {
 }
 
 .card-img-top {
-    width: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 /* HOMEPAGE */
 
 .sidebar {
-    width: 30%;
-    height: 100%;
+    width: 250px;
     float: left;
     background-color: #dddddd;
+    padding: 20px;
+}
+
+.product-container {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.caret {
+    float: right;
+}
+
+.card-footer {
+    text-align:left;
 }

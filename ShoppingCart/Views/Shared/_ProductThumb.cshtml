@@ -1,0 +1,11 @@
+﻿@model ShoppingCart.Commons.Models.Objects.Product
+
+@Html.HiddenFor(model => model.Id)
+<div class="product">
+    <h4 class="card-title">@Html.DisplayFor(model => model.Name)</h4>
+    <h6 class="card-subtitle mb-2 text-muted">@Html.DisplayFor(model => model.Model)</h6>
+    <a href="@Url.Action("ViewProductDetail", "Product", new { id = Model.Id })">
+        <img class="img-responsive" src="@Html.DisplayFor(model => Model.Image.FilePath)" />
+        <h4 class = "card-footer">@Html.DisplayFor(model => model.Price)</h4>
+    </a>
+</div>

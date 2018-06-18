@@ -4,11 +4,19 @@
     ViewBag.Title = "Products";
 }
 
-<h2>@Html.DisplayFor(model => model.Products[0].Type.Name)</h2>
+<div class="col-md-2">
+    <h3>@Html.DisplayFor(model => model.Products[0].Type.Name)</h3>
+</div>
 
-<div class="row">
+<div class="col-md-10">
+    <h3></h3>
+
     @foreach (var product in Model.Products)
     {
-        @Html.Partial("_ProductThumb", product)
+        <div class="col-md-4">
+            <div class="product-container">
+                @Html.Partial("_ProductThumb", product)
+            </div>
+        </div>
     }
 </div>

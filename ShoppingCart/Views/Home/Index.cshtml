@@ -5,48 +5,48 @@
     int maxCols = 8;
 }
 
-<div class="container-fluid">
-    <div class="categories panel-left">
-        <nav class="navbar navbar-default">
-            @foreach (var productCategory in Model.ProductCategories)
-            {
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                @productCategory.Name<span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                @foreach (var productType in Model.ProductTypes)
+<div class="col-md-2">
+    <h3>Categories</h3>
+
+    <div>
+        @foreach (var productCategory in Model.ProductCategories)
+        {
+            <ul class="nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <h5>@productCategory.Name</h5><span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        @foreach (var productType in Model.ProductTypes)
+                        {
+                            foreach (var product in Model.Products)
+                            {
+                                if (product.Type.Id.Equals(productType.Id) && product.Category.Id.Equals(productCategory.Id))
                                 {
-                                    foreach (var product in Model.Products)
-                                    {
-                                        if(product.Type.Id.Equals(productType.Id) && product.Category.Id.Equals(productCategory.Id))
-                                        {
-                                            <li><a href="@Url.Action("ViewProductList", "Product", new { typeId = product.Type.Id, categoryId = product.Category.Id })">@product.Type.Name</a></li>
-                                            break;
-                                        }
-                                    }
+                                    <li><a href="@Url.Action("ViewProductList", "Product", new { typeId = product.Type.Id, categoryId = product.Category.Id })">@product.Type.Name</a></li>
+                                    break;
                                 }
-                            </ul>
-                        </li>
+                            }
+                        }
                     </ul>
-                </div>
-            }
-        </nav>
-    </div>
-</div>
-<div class="mostPopular">
-    <h2>Most Popular</h2>
-    <div class="row" style="padding-top:50px">
-        <div class="text-center list-group list-group-horizontal">
-            @for (int i = 0; i < Model.Products.Count() && i < maxCols; i++)
-            {
-                <a href="@Url.Action("ViewProductDetail", "Product", new { id = Model.Products[i].Id })">
-                    <img class="thumbnail list-group-item" src="@Html.DisplayFor( model => model.Products[i].Image.FilePath)" />
-                </a>
-            }
-        </div>
+                </li>
+            </ul>
+        }
     </div>
 </div>
 
+<div class="col-md-10">
+    <h3>Most Popular</h3>
+
+    @foreach (var product in Model.Products)
+    {
+        <div class="col-md-4">
+            <div class="product-container">
+                @*<a href="@Url.Action("ViewProductDetail", "Product", new { id = product.Id })">
+                    <img class="img-responsive" src="@Html.DisplayFor(model => product.Image.FilePath)" />
+                </a>*@
+                @Html.Partial("_ProductThumb", product)
+            </div>
+        </div>
+    }
+</div>
