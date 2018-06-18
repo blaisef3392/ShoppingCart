@@ -1,0 +1,46 @@
+﻿@model ShoppingCart.Models.Objects.OrdersViewModel
+
+@{
+    ViewBag.Title = "Your Orders";
+}
+
+<h2>Your Orders</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Orders[0].OrderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Orders[0].DeliveryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Orders[0].DeliveryRecipient)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Orders[0].DeliveryAddress)
+        </th>
+    </tr>
+
+    @foreach (var order in Model.Orders)
+    {
+    <tr>
+        @Html.HiddenFor(modelItem => order.Id)
+        <td>
+            @Html.DisplayFor(modelItem => order.OrderDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => order.DeliveryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => order.DeliveryRecipient)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => order.DeliveryAddress)
+        </td>
+        <td>
+            @Html.ActionLink("View", "ViewOrder", new { id = order.Id })
+        </td>
+    </tr>
+    }
+</table>

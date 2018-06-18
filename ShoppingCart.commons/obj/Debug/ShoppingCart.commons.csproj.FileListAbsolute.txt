@@ -1,0 +1,6 @@
+D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\bin\Debug\ShoppingCart.commons.dll
+D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\bin\Debug\ShoppingCart.commons.pdb
+D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.commons.csprojResolveAssemblyReference.cache
+D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.commons.csproj.CoreCompileInputs.cache
+D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.commons.dll
+D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.commons.pdb

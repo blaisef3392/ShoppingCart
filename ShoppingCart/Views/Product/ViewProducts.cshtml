@@ -1,0 +1,55 @@
+﻿@model ShoppingCart.Models.Objects.ProductsViewModel
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>@Html.DisplayFor(model => model.Products[0].Type.Name)</h2>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products[0].Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products[0].Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products[0].Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products[0].Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products[0].Price)
+        </th>
+    </tr>
+
+    @foreach (var product in Model.Products)
+    {
+    <tr>
+        @Html.HiddenFor(modelItem => product.Id)
+        <td>
+            <a href="@Url.Action("ViewProduct", "Product", new { id = product.Id })">
+                <img class="thumbnail list-group-item" src="@Html.DisplayFor( modelItem => product.Image.FilePath)" />
+            </a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => product.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => product.Category.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => product.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => product.Type.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => product.Price)
+        </td>
+    </tr>
+    }
+</table>
