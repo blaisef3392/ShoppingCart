@@ -13,9 +13,9 @@ namespace ShoppingCart.Controllers
     {
         public int counter = 0;
         
-        public ActionResult ViewProducts(int typeId, int categoryId)
+        public ActionResult ViewProductList(int typeId, int categoryId)
         {
-            var model = new ProductsViewModel
+            var model = new ProductListViewModel
             {
                 Products = ShoppingCartCSV.GetProducts().Where(x => x.Type.Id.Equals(typeId) && x.Category.Id.Equals(categoryId)).ToList()
             };
@@ -23,7 +23,7 @@ namespace ShoppingCart.Controllers
             return View(model);
         }
 
-        public ActionResult ViewProduct(int id)
+        public ActionResult ViewProductDetail(int id)
         {
             var Model = new ProductDetailViewModel
             {

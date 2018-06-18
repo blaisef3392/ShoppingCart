@@ -17,9 +17,9 @@ namespace ShoppingCart.Controllers
         static DateTime orderDate = DateTime.Today; 
         static DateTime deliveryDate = DateTime.Today.AddDays(30); //default
         
-        public ActionResult ViewOrders()
+        public ActionResult ViewOrderList()
         {
-            var model = new OrdersViewModel
+            var model = new OrderListViewModel
             {
                 Orders = ShoppingCartCSV.GetOrders().Where(x => x.AccountId.Equals(123)).ToList()
             };
@@ -27,7 +27,7 @@ namespace ShoppingCart.Controllers
             return View(model);
         }
 
-        public ActionResult ViewOrder(int id)
+        public ActionResult ViewOrderDetail(int id)
         {
             Order order = ShoppingCartCSV.GetOrders().Where(x => x.Id.Equals(id)).FirstOrDefault();
             List<OrderLine> orderLines = ShoppingCartCSV.GetOrderLines().Where(x => x.OrderId.Equals(order.Id)).ToList();
@@ -73,7 +73,7 @@ namespace ShoppingCart.Controllers
             ShoppingCartCSV.AddOrder(accountId, order, cart);
             Session.Remove("Cart");
 
-            return RedirectToAction("ViewOrders");
+            return RedirectToAction("ViewOrderList");
         }
 
         [HttpPost]
@@ -83,7 +83,7 @@ namespace ShoppingCart.Controllers
 
             ShoppingCartCSV.CancelOrder(accountId, OrderDetailViewModel.Order.Id);
 
-            return RedirectToAction("ViewOrders");
+            return RedirectToAction("ViewOrderList");
         }
     }
 }

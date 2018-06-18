@@ -1,4 +1,4 @@
-﻿@model ShoppingCart.Models.Objects.OrdersViewModel
+﻿@model ShoppingCart.Models.Objects.OrderListViewModel
 
 @{
     ViewBag.Title = "Your Orders";
@@ -39,7 +39,7 @@
             @Html.DisplayFor(modelItem => order.DeliveryAddress)
         </td>
         <td>
-            @Html.ActionLink("View", "ViewOrder", new { id = order.Id })
+            @Html.ActionLink("View", "ViewOrderDetail", new { id = order.Id })
         </td>
     </tr>
     }

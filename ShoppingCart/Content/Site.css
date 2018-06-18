@@ -92,3 +92,16 @@ div.categories {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 0;
 }
+
+.card-img-top {
+    width: 100px;
+}
+
+/* HOMEPAGE */
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-color: #dddddd;
+}

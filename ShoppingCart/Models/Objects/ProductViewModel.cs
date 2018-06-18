@@ -15,7 +15,7 @@ namespace ShoppingCart.Models.Objects
         public int Quantity { get; set; }
     }
 
-    public class ProductsViewModel
+    public class ProductListViewModel
     {
         public List<Product> Products { get; set; }
     }

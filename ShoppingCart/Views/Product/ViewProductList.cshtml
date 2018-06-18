@@ -1,0 +1,14 @@
+﻿@model ShoppingCart.Models.Objects.ProductListViewModel
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>@Html.DisplayFor(model => model.Products[0].Type.Name)</h2>
+
+<div class="row">
+    @foreach (var product in Model.Products)
+    {
+        @Html.Partial("_ProductThumb", product)
+    }
+</div>

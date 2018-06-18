@@ -210,12 +210,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\Product\ViewProducts.cshtml" />
-    <Content Include="Views\Product\ViewProduct.cshtml" />
+    <Content Include="Views\Product\ViewProductList.cshtml" />
+    <Content Include="Views\Product\ViewProductDetail.cshtml" />
     <Content Include="Views\Cart\ViewCart.cshtml" />
     <Content Include="Views\Order\DisplayForm.cshtml" />
-    <Content Include="Views\Order\ViewOrders.cshtml" />
-    <Content Include="Views\Order\ViewOrder.cshtml" />
+    <Content Include="Views\Order\ViewOrderList.cshtml" />
+    <Content Include="Views\Order\ViewOrderDetail.cshtml" />
+    <Content Include="Views\Product\_ProductThumb.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -19,7 +19,7 @@ namespace ShoppingCart.Models.Objects
         public Cart Cart { get; set; }
     }
 
-    public class OrdersViewModel
+    public class OrderListViewModel
     {
         public List<Order> Orders { get; set; }
     }
