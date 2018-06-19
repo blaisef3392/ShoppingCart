@@ -110,14 +110,7 @@ div.categories {
     background-color: white;
     border: 1px solid #ddd;
     margin-bottom: 20px;
-    padding: 5px 100px 5px 5px;
-}
-
-.btn-add-to-cart {
-    padding: 10px;
-    background-color:transparent;
-    float:right;
-    margin-top:5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .caret {
@@ -125,5 +118,16 @@ div.categories {
 }
 
 .card-price {
-    text-align:left;
+    text-align: right;
+    font-weight: 500;
+    color: red;
+}
+
+.btn-add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    margin-top: 10px;
 }

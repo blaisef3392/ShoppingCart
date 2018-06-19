@@ -179,7 +179,6 @@ D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.xml
 D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.xml
 D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.xml
-D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CoreCompileInputs.cache
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CopyComplete
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll

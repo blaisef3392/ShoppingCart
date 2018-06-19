@@ -2,7 +2,6 @@
 
 @{
     ViewBag.Title = "Home";
-    int maxCols = 8;
 }
 
 <div class="col-md-2">
@@ -42,9 +41,6 @@
     {
         <div class="col-md-4">
             <div class="product-container">
-                @*<a href="@Url.Action("ViewProductDetail", "Product", new { id = product.Id })">
-                    <img class="img-responsive" src="@Html.DisplayFor(model => product.Image.FilePath)" />
-                </a>*@
                 @Html.Partial("_ProductThumb", product)
             </div>
         </div>
