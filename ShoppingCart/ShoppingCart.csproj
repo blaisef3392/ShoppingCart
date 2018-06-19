@@ -216,7 +216,7 @@
     <Content Include="Views\Order\DisplayForm.cshtml" />
     <Content Include="Views\Order\ViewOrderList.cshtml" />
     <Content Include="Views\Order\ViewOrderDetail.cshtml" />
-    <Content Include="Views\Shared\_ProductThumb.cshtml" />
+    <Content Include="Views\Shared\_Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

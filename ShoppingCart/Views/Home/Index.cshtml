@@ -40,8 +40,8 @@
     @foreach (var product in Model.Products)
     {
         <div class="col-md-4">
-            <div class="product-thumb-container">
-                @Html.Partial("_ProductThumb", product)
+            <div class="product-thumb">
+                @Html.Partial("_Product", product)
             </div>
         </div>
     }
