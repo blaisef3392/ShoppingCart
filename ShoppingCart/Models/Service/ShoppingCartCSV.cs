@@ -85,7 +85,8 @@ namespace ShoppingCart.Models.Service
                                     Name = fields[3],
                                     Category = GetProductCategories().Where(x => x.Id.Equals(int.Parse(fields[4]))).FirstOrDefault(),//get the object relative to cell match
                                     Type = GetProductTypes().Where(x => x.Id.Equals(int.Parse(fields[5]))).FirstOrDefault(),
-                                    Image = GetImages().Where(x => x.Id.Equals(int.Parse(fields[6]))).FirstOrDefault()
+                                    Image = GetImages().Where(x => x.Id.Equals(int.Parse(fields[6]))).FirstOrDefault(),
+                                    Description = fields[7]
                                 });
                         else
                             titleRow = false;

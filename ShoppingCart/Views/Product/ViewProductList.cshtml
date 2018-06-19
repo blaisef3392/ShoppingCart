@@ -4,29 +4,17 @@
     ViewBag.Title = "Products";
 }
 
-<div class="col-md-2">
+<div class="col-md-12">
     <h3>@Html.DisplayFor(model => model.Products[0].Type.Name)</h3>
-</div>
-
-<div class="col-md-10">
-    <h3></h3>
 
     @foreach (var product in Model.Products)
     {
-        <div class="col-md-2">
+        <div class="col-md-3">
             @using (Html.BeginForm("AddToCart", "Cart"))
             {
                 @Html.AntiForgeryToken()
- 
-                <div class="col-md-5">
-                    <div class="product-thumb">
-                        @Html.Partial("_Product", product)
-                        <div>
-                            @Html.HiddenFor(model => product.Id)
-                            @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
-                            <input type="submit" value="Add To Cart" class="btn-add-to-cart" />
-                        </div>
-                    </div>
+                <div class="product-thumb">
+                    @Html.Partial("_Product", product)
                 </div>
             }
         </div>

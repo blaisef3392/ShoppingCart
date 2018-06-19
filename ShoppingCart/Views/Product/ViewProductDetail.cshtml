@@ -10,16 +10,23 @@
     @Html.AntiForgeryToken()
  
     <div class="col-md-10 col-md-4">
-        <div class="product-container">
-            @Html.Partial("_Product", Model.Product)
-            <div class="form-group">
-                @Html.HiddenFor(model => model.Product.Id)
-                <div>
-                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+        <div class="container-fluid">
+            <div class="product-thumb-detail">
+                @Html.Partial("_Product", Model.Product)
+                <div class="form-group">
+                    @Html.HiddenFor(model => model.Product.Id)
+                    <div>
+                        @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div>
+                        <input type="submit" value="Add To Cart" class="btn-add-to-cart" />
+                    </div>
                 </div>
-                <div>
-                    <input type="submit" value="Add To Cart" class="btn-add-to-cart" />
-                </div>
+            </div>
+            <div class="product-detail">
+                <span class="description">@Model.Product.Description</span>
+                <div class="pdp-product-brand__divider"></div>
+                <span class="pdp-product-brand__name">Brand:</span>
             </div>
         </div>
     </div>

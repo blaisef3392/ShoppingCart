@@ -23,5 +23,6 @@ namespace ShoppingCart.Commons.Models.Objects
         public ProductCategory Category { get; set; }
         public ProductType Type { get; set; }
         public Image Image { get; set; }
+        public string Description { get; set; }
     }
 }

@@ -1,9 +1,9 @@
-Id;Price;Model;Name;CategoryId;Type;ImageId
-1;100.00;Spd9;Shimano;1;1;1
-2;200,000;RS150;Honda;2;2;2
-3;234,250;Raider150;Suzuki;2;2;6
-4;213,255;Raider150R;Suzuki;2;2;7
-5;280,278;Raider Elite;Suzuki;2;2;8
-6;250,000.00;XYZ1;Nikon;3;3;3
-7;545.22;13rc;Dunlop;1;4;4
-8;777.33;N/A;Converse;4;1;5
+Id;Price;Model;Name;CategoryId;Type;ImageId;Description
+1;100.00;Spd9;Shimano;1;1;1;Santic Men MTB Cycling Shoes Auto-lock Bicycle Shoes Mountain Bike For Shimano SPD Eggbeater System Shoes 3 Colors,Black Green - intl.
+2;200,000;RS150;Honda;2;2;2;Hondas' latest generation of World Class Racing Engine with Class-Leading Advance Technology and born out of MotoGP DNA thats RS150.
+3;234,250;Raider150;Suzuki;2;2;6;The R150's supremacy goes on with the launch of the Raider R150 Reloaded - an enhanced version of the much-loved Raider R150. Reload your ride with the new Raider R150 with its updated decals, unique wavy disc brakes, tubeless tires and key shutter that will surely stand out like a king on the roads.
+4;213,255;Raider150R;Suzuki;2;2;7;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mi dui, maximus et magna pulvinar, pharetra volutpat augue. Ut viverra facilisis tincidunt.
+5;280,278;Raider Elite;Suzuki;2;2;8;The new Suzuki Raider Elite revolutionizes itself as it gives the rider one step closer to riding a true Suzuki GSX-R. History repeats itself as the new Suzuki Raider R150 emerges far ahead of the competition as the nation’s top-class sporty underbone motorcycle, the leader of the pack.
+6;250,000.00;XYZ1;Nikon;3;3;3;Nikon D3400 24.2MP with AF-P DX Nikkor 18-55mm.
+7;545.22;13rc;Dunlop;1;4;4;The pattern groove provides anti-slippage when cornering, stability on wet or dry roads, and high stability at high speeds.
+8;777.33;N/A;Converse;4;1;5;One of the most stylish, timeless, and versatile sneakers ever created, the iconic Converse Chuck Taylor All Star.
