@@ -10,15 +10,6 @@
     <tr>
         <th></th>
         <th>
-            @Html.DisplayNameFor(model => model.Cart.Items[0].Product.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cart.Items[0].Product.Model)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cart.Items[0].Product.Price)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Cart.Items[0].Quantity)
         </th>
         <th>
@@ -30,16 +21,11 @@
     {
     <tr>
         <td>
-            <img class="thumbnail" src="@Html.DisplayFor(modelItem => item.Product.Image.FilePath)" />
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Product.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Product.Model)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Product.Price)
+            <div class="col-md-4">
+                <div class="product-thumb-container">
+                    @Html.Partial("_ProductThumb", item.Product)
+                </div>
+            </div>
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Quantity)
