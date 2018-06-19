@@ -18,5 +18,6 @@ namespace ShoppingCart.Models.Objects
     public class ProductListViewModel
     {
         public List<Product> Products { get; set; }
+        public int Quantity { get; set; }
     }
 }

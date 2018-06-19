@@ -113,6 +113,15 @@ div.categories {
     padding: 5px 100px 5px 5px;
 }
 
+.product-thumb-container {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 5px 100px 5px 5px;
+}
+
 .btn-add-to-cart {
     padding: 10px;
     background-color:transparent;

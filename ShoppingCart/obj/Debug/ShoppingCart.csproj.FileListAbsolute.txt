@@ -183,3 +183,4 @@ D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CoreCompileInp
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CopyComplete
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
+D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
