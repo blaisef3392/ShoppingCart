@@ -13,12 +13,12 @@
 
     @foreach (var product in Model.Products)
     {
-        <div class="col-md-4">
+        <div class="col-md-2">
             @using (Html.BeginForm("AddToCart", "Cart"))
             {
                 @Html.AntiForgeryToken()
  
-                <div class="col-md-10">
+                <div class="col-md-5">
                     <div class="product-container">
                         @Html.Partial("_ProductThumb", product)
                         <div class="form-group">

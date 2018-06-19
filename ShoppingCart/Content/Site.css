@@ -136,3 +136,7 @@ div.categories {
 .card-price {
     text-align:left;
 }
+
+.container {
+    margin-left: 25%;
+}
