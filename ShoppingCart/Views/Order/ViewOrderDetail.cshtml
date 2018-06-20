@@ -11,10 +11,10 @@
     @Html.AntiForgeryToken()
 
     <div class="form-group">
-        <table class="table">
+        <table class="border">
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             @Html.HiddenFor(model => model.Order.Id)
-            <tr>
+            <tr class="list-header">
                 <th></th>
                 <th>
                     @Html.DisplayNameFor(model => model.OrderLines[0].Item.Quantity)
@@ -34,10 +34,14 @@
                         </div>
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => orderLine.Item.Quantity)
+                        <div class="item-quantity">
+                            <div class="box-counter">
+                                @Html.DisplayFor(modelItem => orderLine.Item.Quantity)
+                            </div>
+                        </div>
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => orderLine.Item.Total)
+                        <h4 class="total">@Html.DisplayFor(modelItem => orderLine.Item.Total)</h4>
                     </td>
                 </tr>
             }
@@ -50,8 +54,6 @@
                 <td>
                     <h4 class="total">@Html.DisplayFor(model => model.Order.Total)</h4>
                 </td>
-            </tr>
-            <tr>
                 <td>
                     <input type="submit" value="Cancel Order" class="btn btn-default" />
                 </td>

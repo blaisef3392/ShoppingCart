@@ -13,6 +13,7 @@ namespace ShoppingCart.commons.Models.Objects
         public Product Product { get; set; }
         public int Quantity { get; set; }
 
+        [Display(Name = "Sub Total")]
         [DataType(DataType.Currency)]
         public double Total
         {

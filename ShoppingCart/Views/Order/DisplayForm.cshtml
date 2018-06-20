@@ -20,7 +20,7 @@
             @Html.DisplayNameFor(model => model.Cart.Items[0].Product.Model)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Cart.Items[0].Product.Name)
+            @Html.DisplayNameFor(model => model.Cart.Items[0].Product.Brand)
         </th>
     </tr>
 
@@ -40,7 +40,7 @@
             @Html.DisplayFor(modelItem => item.Product.Model)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Product.Name)
+            @Html.DisplayFor(modelItem => item.Product.Brand)
         </td>
         <td>
             <img class="thumbnail" src="@Html.DisplayFor(modelItem => item.Product.Image.FilePath)" />
