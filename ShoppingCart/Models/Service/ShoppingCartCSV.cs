@@ -82,7 +82,7 @@ namespace ShoppingCart.Models.Service
                                     Id = int.Parse(fields[0]),
                                     Price = Double.Parse(fields[1]),
                                     Model = fields[2],
-                                    Name = fields[3],
+                                    Brand = fields[3],
                                     Category = GetProductCategories().Where(x => x.Id.Equals(int.Parse(fields[4]))).FirstOrDefault(),//get the object relative to cell match
                                     Type = GetProductTypes().Where(x => x.Id.Equals(int.Parse(fields[5]))).FirstOrDefault(),
                                     Image = GetImages().Where(x => x.Id.Equals(int.Parse(fields[6]))).FirstOrDefault(),

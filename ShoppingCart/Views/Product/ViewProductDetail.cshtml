@@ -26,7 +26,22 @@
             <div class="product-detail">
                 <span class="description">@Model.Product.Description</span>
                 <div class="pdp-product-brand__divider"></div>
-                <span class="pdp-product-brand__name">Brand:</span>
+                <div class="product-detail-line">
+                    <span class="name">@Html.DisplayNameFor(model => model.Product.Brand):</span>
+                    <text class="value">@Html.DisplayFor(model => model.Product.Brand)</text>
+                </div>
+                <div class="product-detail-line">
+                    <span class="name">@Html.DisplayNameFor(model => model.Product.Model):</span>
+                    <text class="value">@Html.DisplayFor(model => model.Product.Model)</text>
+                </div>
+                <div class="product-detail-line">
+                    <span class="name">@Html.DisplayNameFor(model => model.Product.Type):</span>
+                    <text class="value">@Html.DisplayFor(model => model.Product.Type.Name)</text>
+                </div>
+                <div class="product-detail-line">
+                    <span class="name">@Html.DisplayNameFor(model => model.Product.Category):</span>
+                    <text class="value">@Html.DisplayFor(model => model.Product.Category.Name)</text>
+                </div>
             </div>
         </div>
     </div>

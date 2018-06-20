@@ -6,7 +6,6 @@ D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\obj\Debug\Shop
 D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.commons.pdb
 D:\Github\ShoppingCart\ShoppingCart.commons\bin\Debug\ShoppingCart.commons.dll
 D:\Github\ShoppingCart\ShoppingCart.commons\bin\Debug\ShoppingCart.commons.pdb
-D:\Github\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.Commons.csprojResolveAssemblyReference.cache
 D:\Github\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.Commons.csproj.CoreCompileInputs.cache
 D:\Github\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.commons.dll
 D:\Github\ShoppingCart\ShoppingCart.commons\obj\Debug\ShoppingCart.commons.pdb

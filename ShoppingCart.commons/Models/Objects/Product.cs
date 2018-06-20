@@ -18,8 +18,8 @@ namespace ShoppingCart.Commons.Models.Objects
         public double Price { get; set; }
         public string Model { get; set; }
 
-        [Display(Name = "Product Name")]
-        public string Name { get; set; }
+        [Display(Name = "Brand")]
+        public string Brand { get; set; }
         public ProductCategory Category { get; set; }
         public ProductType Type { get; set; }
         public Image Image { get; set; }

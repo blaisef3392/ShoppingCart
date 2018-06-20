@@ -17,7 +17,7 @@
             <tr>
                 <th></th>
                 <th>
-                    @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Name)
+                    @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Brand)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Model)
@@ -45,7 +45,7 @@
                     <img class="thumbnail" src="@Html.DisplayFor(modelItem => orderLine.Item.Product.Image.FilePath)" />
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Product.Name)
+                    @Html.DisplayFor(modelItem => orderLine.Item.Product.Brand)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => orderLine.Item.Product.Model)

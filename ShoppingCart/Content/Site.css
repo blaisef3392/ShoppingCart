@@ -108,6 +108,7 @@ div.categories {
     border-bottom: 1px solid #ddd;
     width: 60%;
     float: left;
+    padding-left:10px;
 }
 
 .product-thumb-detail {
@@ -126,7 +127,7 @@ div.categories {
     background-color: white;
     border: 1px solid #ddd;
     margin-bottom: 20px;
-    padding: 5px 100px 5px 5px;
+    padding: 5px 50px 5px 10px;
 }
 
 .btn-add-to-cart {
@@ -155,15 +156,9 @@ div.categories {
 
 .description {
     font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
-    font-weight: bold;
     color: #212121;
     background: #fafafa;
     font-size:20px;
-}
-
-.pdp-product-brand__name {
-    color: #9e9e9e;
-    font-size: 15px;
 }
 
 .pdp-product-brand__divider {
@@ -176,4 +171,21 @@ div.categories {
 .pdp-product-model {
     color: #1a9cb7;
 
+}
+
+div.product-detail .name {
+    color: #9e9e9e;
+    font-size: 15px;
+}
+
+div.product-detail .value {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1a9cb7;
+}
+
+.product-detail-line {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 5px;
+    line-height: 20px;
 }

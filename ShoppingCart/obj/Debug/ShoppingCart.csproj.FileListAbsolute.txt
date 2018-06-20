@@ -91,6 +91,12 @@ D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart
 D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
 D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart\bin\ShoppingCart.commons.dll
 D:\Exercise\MVC\ShoppingCart_v3\ShoppingCart\ShoppingCart\bin\ShoppingCart.commons.pdb
+D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.IO.Compression.dll
+D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe
 D:\Github\ShoppingCart\ShoppingCart\bin\ApplicationInsights.config
 D:\Github\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll.config
 D:\Github\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll
@@ -102,13 +108,9 @@ D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\csi.exe
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\csi.exe.config
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\csi.rsp
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.VisualBasic.Core.targets
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -118,7 +120,6 @@ D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.Console.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.Diagnostics.Process.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.IO.Compression.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.IO.FileSystem.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.IO.FileSystem.Primitives.dll
@@ -141,7 +142,6 @@ D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\System.Xml.XPath.XDocument.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\vbc.exe
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\vbc.exe.config
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\vbc.rsp
-D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe
 D:\Github\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe.config
 D:\Github\ShoppingCart\ShoppingCart\bin\Antlr3.Runtime.dll
 D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Agent.Intercept.dll
@@ -179,8 +179,8 @@ D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.xml
 D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.xml
 D:\Github\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.xml
+D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CoreCompileInputs.cache
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CopyComplete
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
 D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
-D:\Github\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
