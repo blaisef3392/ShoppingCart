@@ -17,22 +17,7 @@
             <tr>
                 <th></th>
                 <th>
-                    @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Brand)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Model)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Type)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Category)
-                </th>
-                <th>
                     @Html.DisplayNameFor(model => model.OrderLines[0].Item.Quantity)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.OrderLines[0].Item.Product.Price)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.OrderLines[0].Item.Total)
@@ -40,32 +25,21 @@
             </tr>
             @foreach (var orderLine in Model.OrderLines)
             {
-            <tr>
-                <td>
-                    <img class="thumbnail" src="@Html.DisplayFor(modelItem => orderLine.Item.Product.Image.FilePath)" />
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Product.Brand)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Product.Model)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Product.Type.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Product.Category.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Quantity)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Product.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => orderLine.Item.Total)
-                </td>
-            </tr>
+                <tr>
+                    <td class="col-md-3">
+                        <div class="col-md-4">
+                            <div class="product-thumb">
+                                @Html.Partial("_Product", orderLine.Item.Product)
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => orderLine.Item.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => orderLine.Item.Total)
+                    </td>
+                </tr>
             }
             <tr>
                 <th>
@@ -74,7 +48,7 @@
             </tr>
             <tr>
                 <td>
-                    @Html.DisplayFor(model => model.Order.Total)
+                    <h4 class="total">@Html.DisplayFor(model => model.Order.Total)</h4>
                 </td>
             </tr>
             <tr>

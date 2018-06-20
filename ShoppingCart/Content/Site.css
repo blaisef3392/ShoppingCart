@@ -127,7 +127,7 @@ div.categories {
     background-color: white;
     border: 1px solid #ddd;
     margin-bottom: 20px;
-    padding: 5px 50px 5px 10px;
+    padding: 5px 100px 5px 10px;
 }
 
 .btn-add-to-cart {
@@ -148,6 +148,12 @@ div.categories {
 .card-price {
     text-align:left;
     color:red;
+}
+
+.total {
+    text-align: left;
+    color: red;
+    font-weight:bold;
 }
 
 .container {
