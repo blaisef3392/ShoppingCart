@@ -52,7 +52,11 @@ namespace ShoppingCart.Models.Service
                     }
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                //Console.WriteLine(e);
+                throw new Exception("Ooops something went wrong fetching the images.");
+            }
 
             return images;
         }
@@ -93,7 +97,11 @@ namespace ShoppingCart.Models.Service
                     }
                 }
             }
-            catch (Exception e) { Console.WriteLine(e); }
+            catch (Exception e)
+            {
+                //Console.WriteLine(e);
+                throw new Exception(e.Message);
+            }
 
             return products;
         }

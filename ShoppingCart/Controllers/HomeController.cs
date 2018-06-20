@@ -15,19 +15,25 @@ namespace ShoppingCart.Controllers
     {
         public ActionResult Index()
         {
+            var model = new HomeViewModel();
             Session["accountId"] = 123; //temporary TODO: replace with retrieve from csv
-            List<Product> products = ShoppingCartCSV.GetProducts();
-            List<ProductCategory> productCategories = ShoppingCartCSV.GetProductCategories().OrderBy(x => x.Name).ToList();
-            List<ProductType> productTypes = ShoppingCartCSV.GetProductTypes().OrderBy(x => x.Name).ToList();
-
-
-            var model = new HomeViewModel
+            try
             {
-                ProductCategories = productCategories,
-                ProductTypes = productTypes,
-                Products = products
-            };
+                List<Product> products = ShoppingCartCSV.GetProducts();
+                List<ProductCategory> productCategories = ShoppingCartCSV.GetProductCategories().OrderBy(x => x.Name).ToList();
+                List<ProductType> productTypes = ShoppingCartCSV.GetProductTypes().OrderBy(x => x.Name).ToList();
+                model.ProductCategories = productCategories;
+                model.ProductTypes = productTypes;
+                model.Products = products;
 
+            }
+            catch (Exception ex)
+            {
+                model.HasError = true;
+                model.Errormessage = ex.Message;
+                //throw;
+            }
+           
             return View(model);
             //return RedirectToAction("ViewProducts", "Product", null);
         }

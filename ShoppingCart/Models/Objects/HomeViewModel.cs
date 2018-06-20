@@ -12,5 +12,8 @@ namespace ShoppingCart.Models.Objects
         public List<Product> Products { get; set; }
         public List<ProductCategory> ProductCategories { get; set; }
         public List<ProductType> ProductTypes { get; set; }
+
+        public bool HasError { get; set; }
+        public string Errormessage { get; set; }
     }
 }

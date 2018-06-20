@@ -1,24 +1,20 @@
-﻿using ShoppingCart.commons.Models.Objects;
+﻿using ShoppingCart.commons.Models;
+using ShoppingCart.commons.Models.Objects;
 using ShoppingCart.Commons;
-using ShoppingCart.Commons.Models.Objects;
 using ShoppingCart.Models.Objects;
 using ShoppingCart.Models.Service;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.SessionState;
 
 namespace ShoppingCart.Controllers
 {
     public class CartController : Controller
     {
-        Cart cart;
         
         [HttpPost]
         public ActionResult AddToCart(ProductDetailViewModel ProductDetailViewModel)
         {
+            var cart = new Cart();
             if (ProductDetailViewModel.Quantity < 1)
             {
                 return RedirectToAction("ViewCart");
@@ -34,7 +30,7 @@ namespace ShoppingCart.Controllers
                     Quantity = quantity
                 };
 
-                this.SetSession("Cart");
+                this.SetSession(Constants.CART_SESSION_KEY);
 
                 var v = cart.Items.FirstOrDefault(x => x.Product.Id.Equals(product.Id));
 
@@ -48,7 +44,7 @@ namespace ShoppingCart.Controllers
                 }
 
 
-                Session.Add("Cart", cart);
+                Session.Add(Constants.CART_SESSION_KEY, cart);
 
                 return RedirectToAction("ViewCart");
             }
@@ -58,7 +54,7 @@ namespace ShoppingCart.Controllers
         public ActionResult ViewCart()
         {
             this.SetSession("Cart");
-            
+            var cart = new Cart();
             var model = new CartViewModel()
             {
                 Cart = cart
